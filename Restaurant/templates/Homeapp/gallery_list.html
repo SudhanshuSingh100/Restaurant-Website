@@ -1,0 +1,16 @@
+
+{% extends 'services.html' %}
+
+{% block content_img %}
+
+<div class="container">
+  <div class="row">
+    {% for gallery in gallery_list %}
+        <div class="col-3">
+          <img src="{{ gallery.gallery_img.url}}" alt="{{ gallery.gallery_name }}" class="img-fluid img-thumbnail" style="width:250px;height:250px">
+        </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

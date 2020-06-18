@@ -1,0 +1,49 @@
+{% extends 'table_book.html' %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+**Homeapp/bookedtable.html**
+
+
+{% block bookedtable %}
+
+<form action="" method="post">
+        {% csrf_token %}
+          <div class="form-row">
+
+              <div class="form-group">
+
+                  {{ form.name|as_crispy_field }}
+              </div>
+
+            <div class="form-group">
+
+
+                {{ form.email_id|as_crispy_field }}
+            </div>
+            <div class="form-group">
+
+              {{ form.mobile|as_crispy_field }}
+            </div>
+
+            <div class="form-group">
+               {{ form.tot_people|as_crispy_field }}
+            </div>
+
+
+              <div class="form-group ">
+
+                    {{ form.date|as_crispy_field }}
+              </div>
+
+              <div class="form-group">
+
+                     {{ form.time|as_crispy_field }}
+              </div>
+
+        </div>
+     <button type="submit" class="btn btn-warning">Book A Table</button>
+  </form>
+
+{% endblock %}

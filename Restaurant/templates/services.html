@@ -1,0 +1,51 @@
+{% extends 'base_layout.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <div class="row">
+        <br><br>
+        <div class="col-6">
+            <img  style="height:450px;width:450px" src="{% static 'images/chef.jpg' %}" alt="thechef">
+        </div>
+
+        <div class="col-6 text-center">
+            <br><br><br>
+            <h2 style="font-family: times;">THE CHEFS</h2>
+            <h4 style="color:red; font-family: cursive;">The Best or Nothing </h4><br>
+             <p style="font-family:arial">
+                ... for a buffet-style hotel breakfast was the key to success.<br>
+                 But there is another skill...<br>
+                 one of the most important for a chef to have in a kitchen, where anything can go wrong without warning...
+                  the ability to respond and adapt to any situation at will. Some handicapped himself with his choice of dish,
+                 but by adapting to the situation, he overcame that deficit brilliantly."<br>
+                    "He's a little rough around the edges, but he seems like a promising talent.”
+                 <br>
+             </p>
+            <p style="font-family: cursive;">
+                Chef' doesn't mean that you're the best cook, it simply means 'boss.'
+            </p>
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid p-5 p-md-4 bg-light">
+
+        <div class="footer-copyright text-center py-5">
+            <h1><strong>OUR GALLERY</strong></h1>
+            <h3 style="color:red; font-family: cursive;">Faster Than You Can Imagine </h3><br>
+        </div>
+        <div class="container">
+            {% block content_img %}{% endblock %}
+        </div>
+    </div>
+
+<div class="container-fluid">
+
+
+</div>
+
+{% endblock %}

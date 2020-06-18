@@ -1,0 +1,19 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<h2><strong><center>Book A Table </center></strong></h2>
+<div class="row justify-content-center align-items-center h-100">
+
+    <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3 border border-success">
+    {% if error_message %}
+        <p><strong>{{ error_message }}</strong></p>
+    {% endif %}
+     {% block bookedtable %} {% endblock %}
+
+
+  </div>
+</div>
+{% endblock %}

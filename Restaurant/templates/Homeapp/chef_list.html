@@ -1,0 +1,12 @@
+{% extends services.html %}
+
+{% block chefimage %}
+
+    {% for chef in chef_list %}
+      <div class="carousel-item active">
+         <img src="{{ chef.chef_img.url }}" class="img-fluid" alt="theChef">
+
+      </div>
+    {% endfor %}
+
+{% endblock %}

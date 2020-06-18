@@ -1,0 +1,168 @@
+{% load static %}
+<html>
+<head>
+	<title>Candy Restaurant</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+     <!-- material Design for bootstrap -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
+</head>
+<body>
+	{%  include 'navbar.html' %}
+    <div class="container-fluid">
+        {% block content %}
+
+
+
+        {% endblock %}
+    </div>
+	<div>
+        <div class="container-fluid p-3 p-md-4 bg-light">
+
+
+                              <div class="footer-copyright text-center py-3">
+
+                             </div>
+        </div>
+
+	</div>
+	<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4" id="section-contact" style="background-color:#A6a34f">
+ <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+  <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+        <!-- Content -->
+          <img src="images/logo_me.jpg" class="rounded-circle img-thumbnail mx-auto" style="width:50px; height:50px; argin:;">
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Interested in hiring me for your project?</h5>
+        <p>Looking for an full-stack web developer to build your web app or ship your software product? To start an initial chat, just drop me an email at mr.sudmca@gmail.com</p>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none">
+       <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Quick</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#section-home" style="font-size:14px; color:black;">Home</a>
+          </li>
+          <li>
+            <a href="#section-skills" style="font-size:14px; color:black;">Knowledge</a>
+          </li>
+           <li>
+            <a href="#section-portfolio" style="font-size:14px; color:black;">Portfolio</a>
+          </li>
+          <li>
+            <a href="#" style="font-size:14px; color:black;">Blogs</a>
+          </li>
+          <li>
+            <a href="#section-about" style="font-size:14px; color:black;">About</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none">
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Connect</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" class="fa far fa-envelope" style="font-size:14px;color:black;"> Email</a>
+          </li>
+          <li>
+             <a href="#" class="fa fa-mobile-phone" style="font-size:14px;color:black"> Add.  </a>
+          </li>
+          <li>
+            <a href="#" class="fas fa-map-marker" style="font-size:14px;color:black;">  Location</a>
+          </li>
+          <li>
+            <a href="#!"></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <hr>
+  <!-- Call to action -->
+  <!-- <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register for free</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+    </li>
+  </ul> -->
+  <!-- Call to action -->
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a href="#" class="btn-floating btn-fb mx-1" style="font-size:20px;color:white;pointer-events: auto">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://github.com/SudhanshuSingh100/" class="btn-floating btn-tw mx-1" style="font-size:20px;color:white;pointer-events: auto">
+        <i class="fab fa-github-square"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="#" class="btn-floating btn-gplus mx-1" style="font-size:20px;color:white;pointer-events: auto">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a  href="https://www.linkedin.com/in/sudhanshu-singh-911135166/" class="btn-floating btn-li mx-1" style="font-size:20px;color:white;pointer-events: auto">
+        <i class="fab fa-linkedin-in"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://www.instagram.com/mr.sudhann/" class="btn-floating btn-dribbble mx-1" style="font-size:20px;color:white;pointer-events: auto">
+        <i class="fab fa-instagram" > </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+<!--   <div class="footer-copyright text-center py-3">
+
+        !--  © 2020 Copyright:
+         <p>Sudhanshu</p> -->
+
+<!--    </div>  -->
+  <!-- Copyright -->
+
+<div class="container-fluid " style="padding-bottom: 0px; text-align: center; background-color: black; color: white ;">
+	<br>
+      <p>Copyright &copy2020 All rights are reserved | This site is prepared by <strong>Sudhanshu</strong></p>
+	<br>
+</div>
+</footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
